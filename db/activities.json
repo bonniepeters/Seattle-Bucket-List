@@ -8,7 +8,7 @@
         "duration": "2 hours",
         "url": "https://www.spaceneedle.com",
         "user": "Lucas",
-        "done": true
+        "done": "true"
     },
     {
         "name": "The Museum Of Pop Culture",
@@ -19,6 +19,6 @@
         "duration": "2 hours",
         "url": "https://www.mopop.org",
         "user": "Bonnie",
-        "done": false
+        "done": "false"
     }
 ]

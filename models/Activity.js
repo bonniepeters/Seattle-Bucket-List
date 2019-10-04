@@ -9,7 +9,7 @@ const ActivitySchema = new mongoose.Schema({
     duration: String,
     url: String,
     user: String,
-    done: Boolean
+    done: String
 })
 
 const Activity = mongoose.model("Activity", ActivitySchema);

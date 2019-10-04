@@ -1,9 +1,7 @@
-<h1>Activities</h1>
-
 <ul>
-    {{#each Activity}}
+    {{#each activity}}
         <li>
-            {{this.name}}
+            <a href="/{{this.id}}">{{this.name}}</a>
         </li>
     {{/each}}
 </ul>
