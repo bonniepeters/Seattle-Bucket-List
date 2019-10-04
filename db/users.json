@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Bonnie",
+        "favorites": {
+            "foods": ["Bún Xào Đồ Biển", "Sushi", "Pad See Ew"],
+            "drinks": ["Dry Red Wines", "Lecroix", "Water"],
+            "activities": ["Hiking", "Puzzles", "Museums"],
+            "season": "Fall"
+        },
+        "profession": "Software Development",
+        "hometown": "Detroit, MI"
+    },
+    {
+        "name": "Lucas",
+        "favorites": {
+            "foods": ["Example 1", "Example 2", "Example 3"],
+            "drinks": ["Example 1", "Example 2", "Example 3"],
+            "activities": ["Example 1", "Example 2", "Example 3"],
+            "season": "?????"
+        },
+        "profession": "HVAC Installation",
+        "hometown": "McHenry, IL"
+    }
+]

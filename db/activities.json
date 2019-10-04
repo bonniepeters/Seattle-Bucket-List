@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Space Needle",
+        "type": "Sightseeing",
+        "address": "400 Broad St, Seattle, WA 98109",
+        "hours": "Daily: 10:00AM - 8:00PM",
+        "cost": "$37.50",
+        "duration": "2 hours",
+        "url": "https://www.spaceneedle.com",
+        "user": "Lucas",
+        "done": true
+    },
+    {
+        "name": "Space Needle",
+        "type": "Sightseeing",
+        "address": "325 5th Avenue N, Seattle, WA 98109",
+        "hours": "Daily: 10:00AM - 5:00PM",
+        "cost": "$28.00",
+        "duration": "2 hours",
+        "url": "https://www.mopop.org",
+        "user": "Bonnie",
+        "done": false
+    }
+]

@@ -1,4 +1,4 @@
-const mongoose = require("..db/connection");
+const mongoose = require("../db/connection");
 
 const UserSchema = new mongoose.Schema({
     name: String,
@@ -6,9 +6,9 @@ const UserSchema = new mongoose.Schema({
         food: Array,
         drink: Array,
         activities: Array,
-        season: Array
+        season: String
     },
-    occupation: String,
+    profession: String,
     hometown: String
 })
 
