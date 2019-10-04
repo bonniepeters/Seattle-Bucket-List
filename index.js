@@ -7,7 +7,7 @@ const app = express();
 
 app.set("view engine", "hbs");
 
-app.use("/user/", userController);
-app.use("/activity/", activityController);
+app.use("/users/", userController);
+app.use("/activities/", activityController);
 
 app.listen(8080, () => console.log("Can't touch this"));
