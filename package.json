@@ -1,0 +1,25 @@
+{
+  "name": "seattle-bucket-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.0.5",
+    "mongoose": "^5.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bonniepeters/Seattle-Bucket-List.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bonniepeters/Seattle-Bucket-List/issues"
+  },
+  "homepage": "https://github.com/bonniepeters/Seattle-Bucket-List#readme"
+}
