@@ -8,6 +8,7 @@ const activityController = require("./controllers/Activity");
 const app = express();
 app.set("view engine", "hbs");
 app.use(methodOverride('_method'));
+app.use("/public", express.static("public"));
 
 app.use(parser.urlencoded({ extended: true }));
 

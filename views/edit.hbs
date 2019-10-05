@@ -1,4 +1,4 @@
-<h2>Edit Item:</h2>
+<h2>Edit:</h2>
 
 <form action="/{{activity.id}}?_method=put" method="post">
   <p>
@@ -15,7 +15,7 @@
     <label>Time:</label>
     <input type="text" value="{{activity.duration}}" name="duration">
     <label>Website:</label>
-    <input type="text" value="{{activity.url}}" name="url">
+    <input type="url" value="{{activity.url}}" name="url">
     <label>User:</label>
     <input type="text" value="{{activity.user}}" name="user">
     <label>Done:</label>
@@ -23,3 +23,9 @@
   </p>
   <input type="submit" value="Save" />
 </form>
+
+<form action="/{{activity.id}}?_method=delete" method="post">
+    <input type="submit" value="Delete">
+</form>
+
+<button><a href="/{{activity.id}}">Cancel</a></button>
