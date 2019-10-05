@@ -1,7 +1,11 @@
 const express = require("express")
 const router = express.Router()
-
 const Activity = require("../models/Activity");
+
+// Route to meet Lucas and Bonnie page
+router.get("/meet%20lucas%20and%20bonnie", (req, res) => {
+      res.render("meet");
+});
 
 // Route to index/list of activities
 router.get("/", (req, res) => {
@@ -23,7 +27,7 @@ router.post("/", (req, res) => {
     });
 });
 
-// Route to 
+// Route to edit form for a specific activity by id
 router.get('/edit/:id', (req, res) => {
     Activity.findOne({_id: req.params.id})
       .then(activity => {
@@ -31,12 +35,14 @@ router.get('/edit/:id', (req, res) => {
       });
   });
 
+// Route to delete a specific activity by id
 router.delete("/:id", (req, res) => {
-    Activity.findOneAndRemove({ _id: req.params.id }).then(() => {
+    Activity.findOneAndDelete({ _id: req.params.id }).then(() => {
       res.redirect("/");
     });
   });
 
+// Route to edit a specific activity by id
 router.put('/:id', (req, res) => {
     Activity.findOneAndUpdate({_id: req.params.id}, req.body, { new: true })
       .then(activity => {
@@ -44,8 +50,9 @@ router.put('/:id', (req, res) => {
     });
 });
 
+// Route to view a specific activity by id
 router.get("/:id", (req, res) => {
-    Activity.findOne({ _id: req.params.id }).then(activity => {
+    Activity.findById({ _id: req.params.id }).then(activity => {
         res.render("single-activity", activity);
     });
 });

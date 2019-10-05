@@ -4,12 +4,13 @@ const ActivitySchema = new mongoose.Schema({
     name: String,
     type: String,
     address: String,
-    cost: String,
+    cost: Number,
     hours: String,
-    duration: String,
+    duration: Number,
     url: String,
+    imgUrl: String,
     user: String,
-    done: String
+    done: Boolean
 })
 
 const Activity = mongoose.model("Activity", ActivitySchema);
