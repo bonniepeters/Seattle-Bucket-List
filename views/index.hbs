@@ -1,9 +1,19 @@
 <div class="list">
     <ul>
     {{#each activity}}
-        <li>
-            <a href="/{{this.id}}">{{this.name}}</a>
-            <img src="{{this.imgUrl}}">
+        <li class="list-item">
+            <div class="details">
+                <h3><a href="/{{this.id}}">{{this.name}}</a></h3>
+                <p>{{type}}<br>
+                ${{cost}}<br>
+                {{hours}}<br>
+                {{duration}} minutes<br>
+                <a href="{{url}}" target="_blank">{{url}}</a><br>
+                </p>
+            </div>
+            <div class="images">
+                <a href="/{{this.id}}"><img src="{{this.imgUrl}}"></a>
+            </div>
         </li>
     {{/each}}
     </ul>

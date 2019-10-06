@@ -2,8 +2,8 @@ const mongoose = require("../db/connection");
 
 const ActivitySchema = new mongoose.Schema({
     name: String,
-    type: String,
     address: String,
+    type: String,
     cost: Number,
     hours: String,
     duration: Number,

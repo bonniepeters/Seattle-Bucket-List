@@ -3,8 +3,8 @@ const router = express.Router()
 const Activity = require("../models/Activity");
 
 // Route to meet Lucas and Bonnie page
-router.get("/meet%20lucas%20and%20bonnie", (req, res) => {
-      res.render("meet");
+router.get("/about", (req, res) => {
+      res.render("about");
 });
 
 // Route to index/list of activities

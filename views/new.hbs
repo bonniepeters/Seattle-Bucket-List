@@ -1,41 +1,32 @@
-<h2>New Activity:</h2>
+<h2>New Activity</h2>
 
 <form action="/" method="post" accept-charset="utf-8">
-    <p>
-        <label>Name:</label>
-        <input type="text" name="name" required>
-        <label>Type:</label>
-        <select name="type" required>
-            <option value="Sightseeing">Sightseeing</option>
-            <option value="Arts & Culture">Arts & Culture</option>
-            <option value="Outdoor Recreation">Outdoor Recreation</option>
-            <option value="Food & Drink">Food & Drink</option>
-            <option value="Day Trips">Day Trips</option>
-        </select>
-        <label>Address:</label>
-        <input type="text" name="address" required>
-        <label>Cost $:</label>
-        <input type="number" name="cost" min="0" required>
-        <label>Hours:</label>
-        <input type="text" name="hours" required>
-        <label>Time:</label>
-        <input type="number" min="15" step="15" name="duration" placeholder="in minutes" required>
-        <label>Website:</label>
-        <input type="url" name="url" placeholder="https://example.com" required>
-        <label>Image Link:</label>
-        <input type="url" name="url" placeholder="https://example/img.com" required>
-        <label>Added By:</label>
-        <select name="user" required>
-            <option value="Bonnie">Bonnie</option>
-            <option value="Lucas">Lucas</option>
-            <option value="Guest">Guest</option>
-        </select>
-        <label>Been There Done That:</label>
-        <select name="done" required>
-            <option value="true">true</option>
-            <option value="false">false</option>
-        </select>
-    </p>
+    <input type="text" name="name" placeholder="  NAME" required>
+    <input type="text" name="address" placeholder="  ADDRESS" required>
+    <select name="type" required>
+        <option value="" disabled selected>TYPE</option>
+        <option value="Sightseeing">Sightseeing</option>
+        <option value="Arts & Culture">Arts & Culture</option>
+        <option value="Outdoor Recreation">Outdoor Recreation</option>
+        <option value="Food & Drink">Food & Drink</option>
+        <option value="Day Trips">Day Trips</option>
+    </select>
+    <input type="number" name="cost" min="0" placeholder="  COST"required>
+    <input type="text" name="hours" placeholder="  HOURS OF OPERATION"required>
+    <input type="number" min="15" step="15" name="duration" placeholder="  DURATION IN MINUTES" required>
+    <input type="url" name="url" placeholder="  WEBSITE: https://example.com" required>
+    <input type="url" name="imgUrl" placeholder="  IMAGE LINK: https://example/img.com" required>
+    <select name="user" required>
+        <option value="" disabled selected>ADDED BY</option>
+        <option value="Bonnie">Bonnie</option>
+        <option value="Lucas">Lucas</option>
+        <option value="Guest">Guest</option>
+    </select>
+    <select name="done" required>
+        <option value="" disabled selected>BEEN THERE DONE THAT</option>
+        <option value="true">true</option>
+        <option value="false">false</option>
+    </select>
     <input type="submit" value="Create">
 </form>
 

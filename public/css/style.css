@@ -1,40 +1,128 @@
 body {
     background-color: rgb(221, 231, 247);
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.main {
+    margin-top: 12em;
 }
 
-header {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    align-items: end;
+.title {
     background: url("../images/skyline2.jpg");
     background-size: 80%;
     background-position: 0 -50px; 
     margin: 0;
-    height: 10em;
+    height: 9.9em;
 }
 
 nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    padding: 6px;
+    background:  rgb(64, 63, 65);
+}
+nav a {
+    color: white;
+}
+button a{
+    color: white;
 }
 
 h1 {
-    -webkit-text-fill-color: rgb(221, 231, 247); /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(86, 37, 143);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 1.75em;
+    color: rgb(45, 7, 92);
+    font-family: 'Titan One', cursive;
+    line-height: 1.2em;
+    font-size: 1.4em;
     margin: 0;
-    padding: .35em;
+    padding: .45em;
 }
 span {
-    font-size: .9em;
+    font-size: .95em;
+    font-family: 'Lobster', cursive;
 }
 
 a {
     text-decoration: none;
     text-decoration-style: none;
+}
+
+li {
+    list-style: none;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+img {
+    object-fit: cover;
+    width:10.25em;
+    height:10.25em;
+}
+.list {
+    display: grid;
+}
+.list-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 0 10px;
+    font-size: 14px;
+    background: white;
+    margin: 3px auto;
+}
+.list-item a{
+    color: rgb(45, 7, 92);
+}
+.details {
+    width: 70%;
+}
+.images {
+    align-self: center;
+}
+form {
+    margin: 0 15px;
+    display: grid;
+    grid-gap: 5px;
+}
+input {
+    width: 99%;
+    border-radius: 4px;
+    margin: 0;
+    height: 2em;
+    border: 1px solid rgb(171, 169, 173);
+}
+
+select {
+    background: white;
+	padding: .4em;
+	width: 100%;
+    border-radius: .4em;
+    color: gray;
+}
+h2 {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.25em;
+    color: gray;
+}
+input[type=submit], button {
+    width: 100%;
+    background: rgb(45, 7, 92);
     color: white;
+    font-size: 1em;
+}
+button {
+    border-radius: 4px;
+    width: 92%;
+    padding: 5px;
+    margin: 5px 15px;
+}
+h3 {
+    font-weight: bold;
 }
