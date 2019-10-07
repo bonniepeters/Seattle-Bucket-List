@@ -1,7 +1,12 @@
+/* MAIN STYLING */
 body {
     background-color: rgb(221, 231, 247);
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
+}
+a {
+    text-decoration: none;
+    text-decoration-style: none;
 }
 .navbar {
     position: fixed;
@@ -9,7 +14,7 @@ body {
     width: 100%;
 }
 .main {
-    margin-top: 12em;
+    margin-top: 12.2em;
 }
 
 .title {
@@ -22,15 +27,12 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-around;
-    font-size: 1.2em;
-    padding: 6px;
+    justify-content: space-between;
+    font-size: 1.5em;
+    padding: 6px 12px;
     background:  rgb(64, 63, 65);
 }
-nav a {
-    color: white;
-}
-button a{
+nav a, button a {
     color: white;
 }
 
@@ -38,18 +40,13 @@ h1 {
     color: rgb(45, 7, 92);
     font-family: 'Titan One', cursive;
     line-height: 1.2em;
-    font-size: 1.4em;
+    font-size: 1.7em;
     margin: 0;
-    padding: .45em;
+    padding: .3em;
 }
 span {
-    font-size: .95em;
+    font-size: 1.1em;
     font-family: 'Lobster', cursive;
-}
-
-a {
-    text-decoration: none;
-    text-decoration-style: none;
 }
 
 li {
@@ -61,29 +58,41 @@ ul {
 }
 img {
     object-fit: cover;
-    width:10.25em;
-    height:10.25em;
+    width:11.5em;
+    height:11.5em;
 }
 .list {
     display: grid;
 }
 .list-item {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 0 10px;
     font-size: 14px;
     background: white;
-    margin: 3px auto;
-}
-.list-item a{
-    color: rgb(45, 7, 92);
 }
 .details {
-    width: 70%;
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
 }
-.images {
-    align-self: center;
+.list-item a {
+    color: rgb(45, 7, 92);
 }
+p {
+    font-size: 1.6em;
+    margin: 0;
+    padding: 5px 0 0 5px;
+}
+h3 {
+    font-size: 1.8em; 
+    margin: 0;
+    background-color: rgb(221, 231, 247);
+    padding: 5px;
+}
+.list-image {
+    justify-self: end;
+}
+
+
+
+/* FORMS */
 form {
     margin: 0 15px;
     display: grid;
@@ -95,6 +104,7 @@ input {
     margin: 0;
     height: 2em;
     border: 1px solid rgb(171, 169, 173);
+    font-size: 1.5em;
 }
 
 select {
@@ -102,6 +112,8 @@ select {
 	padding: .4em;
 	width: 100%;
     border-radius: 4px;
+    height: 2em;
+    font-size: 1.5em;
 }
 h2 {
     font-weight: bold;
@@ -116,27 +128,32 @@ input[type=submit], button {
     background: rgb(71, 48, 100);
     color: white;
     font-size: 1em;
+    outline: none;
+    border: none;
+    border-radius: 4px;
 }
 button {
-    border-radius: 4px;
     width: 92%;
     padding: 5px;
     margin: 5px 15px;
-    outline: none;
-    border: none;
 }
 .delete {
     margin: 5px 15px 0 15px;
 }
 label {
-    font-size: .75em;
+    font-size: 1.3em;
 }
 input[type=text], input[type=number], input[type=url] {
     padding: 0 10px;
     width: 94%;
 }
+
+
+
+/* About Page */
 .about-activity img {
     width: 100%;
+    height: auto;
 }
 .about-activity ul {
     background: white;
@@ -153,21 +170,31 @@ input[type=text], input[type=number], input[type=url] {
 .about-activity li {
     border-bottom: solid 1px black;
 }
-.favs {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr;
-    margin: 0 auto;
-    grid-column-gap: 3px;
-}
+
+/* About us */
 h4{
     margin: 0;
 }
 .about-us {
+    display: flex;
     padding: 0 10px;
+    font-size: 1.3em;
 }
 .about-us h3 {
     color: rgb(69, 44, 99);
-    font-size: 1.5em;
-    padding: 10px 0;
+    padding: 15px 0;
     margin: 0;
+}
+.bonnie {
+    text-align: right;
+}
+.lucas {
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+.favs {
+    font-size: 1.25em;
+}
+.fav-items {
+    margin: .5em 0;
 }

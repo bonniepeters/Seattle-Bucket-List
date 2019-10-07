@@ -5,6 +5,7 @@ const ActivitySchema = new mongoose.Schema({
     address: String,
     type: String,
     cost: Number,
+    days: String,
     hours: String,
     duration: Number,
     url: String,
