@@ -1,14 +1,16 @@
 <h2>{{name}}</h2>
-<img src="{{this.imgUrl}}">
-<ul>
-    <li>Type: {{type}}</li>
-    <li>Address: {{address}}</li>
-    <li>Cost: ${{cost}}</li>
-    <li>Hours: {{hours}}</li>
-    <li>Time Commitment: {{duration}} minutes</li>
-    <li>Website: <a href="{{url}}" target="_blank">{{url}}</a></li>
-    <li>Suggested By: {{user}}</li>
-    <li>Been there? Done that? {{done}}</li>
-</ul>
+<div class="about-activity">
+    <img src="{{this.imgUrl}}">
+    <ul>
+        <li><span>Type: </span> {{type}}</li>
+        <li><span>Address: </span>{{address}}</li>
+        <li><span>Cost: </span>${{cost}}</li>
+        <li><span>Hours: </span>{{hours}}</li>
+        <li><span>Time Commitment: </span>{{duration}} minutes</li>
+        <li><span>Website: </span><a href="{{url}}" target="_blank">{{url}}</a></li>
+        <li><span>Suggested By: </span>{{user}}</li>
+        <li><span>Been There Done that: </span>{{done}}</li>
+    </ul>
+</div>
 
 <a href="/edit/{{id}}"><button>Edit</button></a>
