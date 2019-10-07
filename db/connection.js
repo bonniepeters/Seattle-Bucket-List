@@ -1,13 +1,22 @@
 const mongoose = require("mongoose");
 
+mongoose.Promise = Promise;
+
+let mongoURI = "";
+if (process.env.NODE_ENV === "production") {
+  mongoURI = process.env.DB_URL;
+} else {
+  mongoURI = "mongodb://localhost/seattle_bucket_list";
+}
+
+
 mongoose.connect(
-    "mongodb://localhost/seattle_bucket_list",
+    mongoURI,
     { useNewUrlParser: true },
     () => {
       console.log("Activities for days!");
     }
     );
 
-mongoose.Promise = Promise;
 
 module.exports = mongoose;

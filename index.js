@@ -18,4 +18,8 @@ app.use(parser.urlencoded({ extended: true }));
 
 app.use("/", activityController);
 
-app.listen(8080, () => console.log("Can't touch this"));
+app.set("port", process.env.PORT || 8080);
+
+app.listen(app.get("port"), () => {
+  console.log(`✅ PORT: ${app.get("port")} 🌟`);
+});
