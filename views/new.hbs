@@ -12,6 +12,13 @@
         <option value="Day Trips">Day Trips</option>
     </select>
     <input type="number" name="cost" min="0" placeholder="  COST"required>
+    <select name="days" required>
+        <option value="" disabled selected>DAYS OF OPERATION</option>
+        <option value="Daily">Daily</option>
+        <option value="Weekdays">Weekdays</option>
+        <option value="Weekends">Weekends</option>
+        <option value="Other">Other</option>
+    </select>
     <input type="text" name="hours" placeholder="  HOURS OF OPERATION"required>
     <input type="number" min="15" step="15" name="duration" placeholder="  DURATION IN MINUTES" required>
     <input type="url" name="url" placeholder="  WEBSITE: https://example.com" required>
@@ -30,4 +37,4 @@
     <input type="submit" value="Create">
 </form>
 
-<button><a href="/">Cancel</a></button>
+<a href="/"><button>Cancel</button></a>

@@ -118,9 +118,9 @@ select {
 h2 {
     font-weight: bold;
     text-align: center;
-    padding: 10px;
+    padding-top: 10px;
     margin: 0;
-    font-size: 1.25em;
+    font-size: 2em;
     color: gray;
 }
 input[type=submit], button {
@@ -148,9 +148,7 @@ input[type=text], input[type=number], input[type=url] {
     width: 94%;
 }
 
-
-
-/* About Page */
+/* About Activity Page */
 .about-activity img {
     width: 100%;
     height: auto;
@@ -160,16 +158,17 @@ input[type=text], input[type=number], input[type=url] {
     padding: 10px;
     line-height: 1.5em;
     text-align: center;
+    font-size: 1.4em;
 }
 .about-activity span, h4 {
     font-family: 'Ubuntu', sans-serif;
     color: rgb(71, 48, 100);
     font-weight: bold;
-    font-size: 1.2em;
 }
 .about-activity li {
     border-bottom: solid 1px black;
 }
+
 
 /* About us */
 h4{
@@ -180,10 +179,9 @@ h4{
     padding: 0 10px;
     font-size: 1.3em;
 }
-.about-us h3 {
-    color: rgb(69, 44, 99);
-    padding: 15px 0;
+.about-us h2 {
     margin: 0;
+    font-size: 1.6em;
 }
 .bonnie {
     text-align: right;
@@ -197,4 +195,11 @@ h4{
 }
 .fav-items {
     margin: .5em 0;
+}
+
+@media screen and (min-width: 600px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+    }
 }

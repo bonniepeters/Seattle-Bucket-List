@@ -15,6 +15,14 @@
     </select>
     <label>COST</label>
     <input type="number" name="cost" min="0" value="{{activity.cost}}" required>
+    <label>DAYS OF OPERATION</label>
+    <select name="days" required>
+        <option value="{{activity.days}}" hidden="hidden" selected="selected">{{activity.days}}</option>
+        <option value="Daily">Daily</option>
+        <option value="Weekdays">Weekdays</option>
+        <option value="Weekends">Weekends</option>
+        <option value="Other">Other</option>
+    </select>
     <label>HOURS OF OPERATION</label>
     <input type="text" value="{{activity.hours}}" name="hours" required>
     <label>DURATION IN MINUTES</label>
