@@ -25,8 +25,14 @@
     </select>
     <label>HOURS OF OPERATION</label>
     <input type="text" value="{{activity.hours}}" name="hours" required>
-    <label>DURATION IN MINUTES</label>
-    <input type="number" min="15" step="15" value="{{activity.duration}}" name="duration" placeholder="in minutes" required>
+    <label>DURATION</label>
+    <select name="duration" required>
+        <option value="{{activity.duration}}" hidden="hidden" selected="selected">{{activity.duration}}</option>
+        <option value="1 Hour">1 Hour</option>
+        <option value="2 Hours">2 Hours</option>
+        <option value="Half Day">Half Day</option>
+        <option value="Full Day">Full Day</option>
+    </select>
     <label>WEBSITE</label>
     <input type="url" value="{{activity.url}}" name="url" required>
     <label>IMAGE LINK</label>

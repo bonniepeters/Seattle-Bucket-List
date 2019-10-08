@@ -7,7 +7,7 @@ const ActivitySchema = new mongoose.Schema({
     cost: Number,
     days: String,
     hours: String,
-    duration: Number,
+    duration: String,
     url: String,
     imgUrl: String,
     user: String,

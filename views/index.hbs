@@ -1,21 +1,66 @@
-<div class="list">
-    <ul>
+<ul class="list">
     {{#each activity}}
-        <li class="list-item">
-            <h3><a href="/{{this.id}}">{{this.name}}</a></h3>
-            <div class="details">
-                <p>{{type}}<br>
-                ${{cost}}<br>
-                {{days}}<br>
-                {{hours}}<br>
-                {{duration}} minutes<br>
+    <li class="list-item">
+        <h3><a href="/{{this.id}}">{{this.name}}</a></h3>
+        <div class="details">
+            <p>
+                {{#compare type "Sightseeing" operator="=="}}
+                <img class="icons" src="../public/images/icons/types/sights.png">
+                {{else}}
+                {{#compare type "Arts & Culture" operator="=="}}
+                <img class="icons" src="../public/images/icons/types/arts.png">
+                {{else}}
+                {{#compare type "Day Trip" operator="=="}}
+                <img class="icons" src="../public/images/icons/types/car.png">
+                {{else}}
+                {{#compare type "Drinks" operator="=="}}
+                <img class="icons" src="../public/images/icons/types/drinks.png">
+                {{else}}
+                {{#compare type "Food" operator="=="}}
+                <img class="icons" src="../public/images/icons/types/food.png">
+                {{else}}
+                {{#compare type "Outdoor Recreation" operator="=="}}
+                <img class="icons" src="../public/images/icons/types/outdoor.png">
+                {{/compare}}
+                {{/compare}}
+                {{/compare}}
+                {{/compare}}
+                {{/compare}}
+                {{/compare}}
+                {{#compare done true operator="=="}}
+                <img class="icons" src="../public/images/icons/check.png">
+                {{/compare}}
+                <br>
+                {{#compare cost "0" operator="=="}}
+                <img class="icons" src="../public/images/icons/free.png">
+                {{else}}
+                {{#compare cost "10" operator="<"}}
+                <img class="cost" src="../public/images/icons/cash.png">
+                {{else}}
+                {{#compare cost "25" operator="<"}}
+                <img class="cost" src="../public/images/icons/cash.png">
+                <img class="cost" src="../public/images/icons/cash.png">
+                {{else}}
+                {{#compare cost "50" operator="<"}}
+                <img class="cost" src="../public/images/icons/cash.png">
+                <img class="cost" src="../public/images/icons/cash.png">
+                <img class="cost" src="../public/images/icons/cash.png">
+                {{else}}
+                <img class="cost" src="../public/images/icons/cash.png">
+                <img class="cost" src="../public/images/icons/cash.png">
+                <img class="cost" src="../public/images/icons/cash.png">
+                <img class="cost" src="../public/images/icons/cash.png">
+                {{/compare}}
+                {{/compare}}
+                {{/compare}}
+                {{/compare}}<br>
+                <img class="icons" src="../public/images/icons/time.png"> {{duration}}<br>
                 <a href="{{url}}" target="_blank">Website</a><br>
-                </p>
-                <div class="list-image">
+            </p>
+            <div class="list-image">
                 <a href="/{{this.id}}"><img src="{{this.imgUrl}}"></a>
-                </div>
             </div>
-        </li>
+        </div>
+    </li>
     {{/each}}
-    </ul>
-</div>
+</ul>

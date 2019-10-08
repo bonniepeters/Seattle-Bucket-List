@@ -14,17 +14,16 @@ a {
     width: 100%;
 }
 .main {
-    margin-top: 12.2em;
+    margin-top: 13.3em;
 }
-
 .title {
     background: url("../images/skyline2.jpg");
-    background-size: 80%;
-    background-position: 0 -50px; 
+    background-size: 20em;
+    background-position: 0 -30px; 
     margin: 0;
-    height: 9.9em;
+    height: 10.97em;
+    width: 100%;
 }
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -35,17 +34,16 @@ nav {
 nav a, button a {
     color: white;
 }
-
 h1 {
     color: rgb(45, 7, 92);
     font-family: 'Titan One', cursive;
-    line-height: 1.2em;
-    font-size: 1.7em;
+    line-height: 1.1em;
+    font-size: 1.9em;
     margin: 0;
     padding: .3em;
 }
 span {
-    font-size: 1.1em;
+    font-size: 1em;
     font-family: 'Lobster', cursive;
 }
 
@@ -58,8 +56,8 @@ ul {
 }
 img {
     object-fit: cover;
-    width:11.5em;
-    height:11.5em;
+    width:14.5em;
+    height:14.5em;
 }
 .list {
     display: grid;
@@ -67,27 +65,38 @@ img {
 .list-item {
     font-size: 14px;
     background: white;
+    margin-bottom: -3px;
 }
 .details {
     display: grid;
-    grid-template-columns: 1.1fr .9fr;
+    grid-template-columns: 1fr 1fr;
 }
 .list-item a {
     color: rgb(45, 7, 92);
 }
 p {
-    font-size: 1.6em;
+    font-size: 1.7em;
     margin: 0;
-    padding: 5px 0 0 5px;
+    align-self: center;
+    justify-self: center;
 }
 h3 {
     font-size: 1.8em; 
     margin: 0;
-    background-color: rgb(221, 231, 247);
+    background-color: lightgray;
     padding: 5px;
 }
 .list-image {
     justify-self: end;
+}
+.icons {
+    object-fit: cover;
+    width:1.5em;
+    height:1.5em;
+}
+.cost {
+    width:.9em;
+    height:1.5em;
 }
 
 
@@ -166,7 +175,7 @@ input[type=text], input[type=number], input[type=url] {
     font-weight: bold;
 }
 .about-activity li {
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px lightgray;
 }
 
 
@@ -198,8 +207,25 @@ h4{
 }
 
 @media screen and (min-width: 600px) {
-    .main {
+    .list {
+        margin: 15.5em 2em 2em 2em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 2em;
+    }
+    .about-activity {
         display: flex;
-        flex-direction: row;
+        justify-content: center;
+    }
+    .about-activity img {
+        width: 50%;
+    }
+    .about-activity ul {
+        text-align: left;
+    }
+    form {
+        margin: 0 auto;
+        width: 50%;
     }
 }
