@@ -1,5 +1,3 @@
-# Seattle-Bucket-List
-
 # Seattle Bucket List  
 This bucket list Express app was designed with a specific place and user in mind: Seattle and the The Peters'(Lucas and Bonnie). It allows us and other guests to add details about places and activities we can checkout in the Seattle area.
 
@@ -9,36 +7,36 @@ This bucket list Express app was designed with a specific place and user in mind
 **Bronze Level Feature Set** 
 * App includes Express, Mongoose, and Handlebars(hbs) dependencies
 * App has full CRUD capability:  
- * Users can create new activities
- * Users can read/view a full list of activities as well as individual activities
- * Users can update/edit existing activities
- * Users can delete/remove existing activities  
+&nbsp;&nbsp;* Users can create new activities
+&nbsp;&nbsp;* Users can read/view a full list of activities as well as individual activities
+&nbsp;&nbsp;* Users can update/edit existing activities
+&nbsp;&nbsp;* Users can delete/remove existing activities  
 * Routes are all accessible from the browser through the use of buttons and links
 
 **Silver Level Feature Set** // [Index Wire Frame](https://www.figma.com/file/9lxpeeqVd26KzEDEFhrpkF/Silver-Index) // [Edit/Create Wire Frame](https://www.figma.com/file/0yrIIevCeJMfr0K6iL209M/Silver-Create-Edit)  
 * App has CSS stylization and optimization for mobile
 * There is an about page with fun details about the Peters'
 * Users are can navigate and be redirected smoothly throughout the site  
- * User is able to click header to be returned home
- * "Add New", "Home", and "About Us" are all links in a navigation bar
- * User can cancel, save, or delete from an edit page
- * User is returned to the preview page for the activity they were editing after submitting one of the above actions
- * User can access the activity's website  
+&nbsp;&nbsp;* User is able to click header to be returned home
+&nbsp;&nbsp;* "Add New", "Home", and "About Us" are all links in a navigation bar
+&nbsp;&nbsp;* User can cancel, save, or delete from an edit page
+&nbsp;&nbsp;* User is returned to the preview page for the activity they were editing after submitting one of the above actions
+&nbsp;&nbsp;* User can access the activity's website  
 
 **Gold Level Feature Set** // [Index Wire Frame](https://www.figma.com/file/sCXrDqKeVIcjXqZ7qpCfCY/Gold-Index) // [Edit/Create Wire Frame](https://www.figma.com/file/zkjPnIHRQkNVIfPM3R77Dv/Gold-Create%2FEdit)
 * Create and Edit forms ensure that input matches desired model values  
- * **name** = String / Input type = text
- * **address** = String / Input type = text
- * **type** = String / Select Options = Sightseeing, Arts & Culture, Outdoor Recreation, Food, Drinks, Day Trips
- * **cost** = Number / Input type = number with min of 0
- * **days** = String / Select Options = Daily, Weekdays, Weekends, Other
- * **open** = String / Select Options = 6:00AM-7:00PM, Sunrise
- * **close** = String / Select Options = 11:00AM-12:00AM, Sunset,
- * **duration** = String / Select Options = 1 Hour, 2 Hours, Half Day, Full Day
- * **url** = url / Input type = url
- * **img** = url / Input type = url
- * **user** = String / Select Options = Bonnie, Lucas, Guest
- * **done** = Boolean / Select Options = true, false  
+&nbsp;&nbsp;* **name** = String / Input type = text
+&nbsp;&nbsp;* **address** = String / Input type = text
+&nbsp;&nbsp;* **type** = String / Select Options = Sightseeing, Arts & Culture, Outdoor Recreation, Food, Drinks, Day Trips
+&nbsp;&nbsp;* **cost** = Number / Input type = number with min of 0
+&nbsp;&nbsp;* **days** = String / Select Options = Daily, Weekdays, Weekends, Other
+&nbsp;&nbsp;* **open** = String / Select Options = 6:00AM-7:00PM, Sunrise
+&nbsp;&nbsp;* **close** = String / Select Options = 11:00AM-12:00AM, Sunset,
+&nbsp;&nbsp;* **duration** = String / Select Options = 1 Hour, 2 Hours, Half Day, Full Day
+&nbsp;&nbsp;* **url** = url / Input type = url
+&nbsp;&nbsp;* **img** = url / Input type = url
+&nbsp;&nbsp;* **user** = String / Select Options = Bonnie, Lucas, Guest
+&nbsp;&nbsp;* **done** = Boolean / Select Options = true, false  
 * Each activity displays with an image
 * There are helpful icons on the index page to indicate type, cost, and duration at a glance
 * App is responsive in both desktop and mobile
