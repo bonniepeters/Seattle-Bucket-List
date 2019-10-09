@@ -254,8 +254,18 @@ h4{
        padding: 0 1em; 
     }
     .list-item {
+        border-radius: 6px;
+        margin-bottom: 0;
         border-left: solid 2px black;
         border-bottom: solid 2px black;
+    }
+    h3 {
+        border-radius: 6px 6px 0 0;
+    }
+    .list-image {
+        margin-bottom: -3px;
+    
+        border-radius: 6px;
     }
     
     /* Index */
@@ -305,8 +315,11 @@ h4{
         margin: 5px auto;
     }
     .cancel {
-        width: 50%;
+        width: 49%;
         margin: 0 25%;
+    }
+    input[type=submit] {
+        width: 98%;
     }
     /* About Us */
     .about-us {
