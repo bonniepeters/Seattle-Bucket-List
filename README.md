@@ -59,10 +59,11 @@ This bucket list Express app was designed with a specific place and user in mind
 ## Installation Instructions
 This web app can be accessed in any browser at this link: [https://seattle-bucket-list.herokuapp.com](https://seattle-bucket-list.herokuapp.com)  
 You may also choose to copy this code and make edits of your own. To do so, follow the steps in [this article](https://help.github.com/en/articles/fork-a-repo)  
-Additionally, you will need to install all this app's dependencies using npm. To install npm, itself, follow the instructions [here](https://www.npmjs.com/get-npm). Once you have done that, fun the following npm installs:
+Additionally, you will need to install all this app's dependencies using npm. To install npm, itself, follow the instructions [here](https://www.npmjs.com/get-npm). Once you have done that, run the following npm installs:
 * npm install express
 * npm install mongoose
 * npm install hbs
 * npm install body-parser
 * npm install method-override
-Once these are each successfully installed, you may then access the app through your localhost:8080. To change the local host port, adjust index.js of your repo
+Once these are each successfully installed, you may then access the app through your localhost:8080.  
+To change the local host port, adjust index.js of your repo
