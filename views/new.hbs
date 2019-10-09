@@ -1,10 +1,10 @@
 <h2>New Activity</h2>
 
 <form action="/" method="post" accept-charset="utf-8">
-    <input type="text" name="name" placeholder=" NAME" required>
+    <input type="text" name="name" placeholder=" ACTIVITY NAME" required>
     <input type="text" name="address" placeholder=" ADDRESS" required>
     <select name="type" required>
-        <option value="" disabled selected>TYPE</option>
+        <option value="" disabled selected>CATEGORY</option>
         <option value="Sightseeing">Sightseeing</option>
         <option value="Arts & Culture">Arts & Culture</option>
         <option value="Outdoor Recreation">Outdoor Recreation</option>
@@ -12,7 +12,7 @@
         <option value="Food & Drink">Drinks</option>
         <option value="Day Trip">Day Trip</option>
     </select>
-    <input type="number" name="cost" min="0" placeholder=" COST"required>
+    <input type="number" name="cost" min="0" placeholder=" COST PER PERSON"required>
     <select name="days" required>
         <option value="" disabled selected>DAYS OF OPERATION</option>
         <option value="Daily">Daily</option>
@@ -73,8 +73,8 @@
     </select>
     <select name="done" required>
         <option value="" disabled selected>BEEN THERE DONE THAT?</option>
-        <option value="true">true</option>
-        <option value="false">false</option>
+        <option value="true">TRUE</option>
+        <option value="false">FALSE</option>
     </select>
     <input type="submit" value="Add">
 </form>

@@ -1,10 +1,10 @@
 <h2>Edit</h2>
 <form action="/{{activity.id}}?_method=put" method="post">
-    <label>NAME</label>
+    <label>ACTIVITY NAME</label>
     <input type="text" value="{{activity.name}}" name="name" required>
     <label>ADDRESS</label>
     <input type="text" value="{{activity.address}}" name="address" required>
-    <label>TYPE</label>
+    <label>CATEGORY</label>
     <select name="type" required>
         <option value="{{activity.type}}" hidden="hidden" selected="selected">{{activity.type}}</option>
         <option value="Sightseeing">Sightseeing</option>
@@ -14,7 +14,7 @@
         <option value="Drinks">Drinks</option>
         <option value="Day Trips">Day Trip</option>
     </select>
-    <label>COST</label>
+    <label>COST PER PERSON</label>
     <input type="number" name="cost" min="0" value="{{activity.cost}}" required>
     <label>DAYS OF OPERATION</label>
     <select name="days" required>
@@ -84,8 +84,8 @@
     <label>BEEN THERE DONE THAT</label>
     <select name="done" required>
       <option value="{{activity.done}}" hidden="hidden" selected="selected">{{activity.done}}</option>
-      <option value="true">true</option>
-      <option value="false">false</option>
+      <option value="true">TRUE</option>
+      <option value="false">FALSE</option>
     </select>
   <input type="submit" value="Save" />
 </form>
