@@ -9,7 +9,6 @@ body {
 }
 a {
     text-decoration: none;
-    text-decoration-style: none;
 }
 .navbar {
     position: fixed;
