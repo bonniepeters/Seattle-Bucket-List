@@ -1,7 +1,7 @@
 <ul class="list">
     {{#each activity}}
     <li class="list-item">
-        <h3><a href="/{{this.id}}">{{this.name}}</a></h3>
+        <a href="/{{this.id}}"><h3>{{this.name}}</h3></a>
         <div class="details">
             <p>
                 {{#compare type "Sightseeing" operator="=="}}
@@ -54,12 +54,10 @@
                 {{/compare}}
                 {{/compare}}
                 {{/compare}}<br>
-                <img class="icons" src="../public/images/icons/time.png"> {{duration}}<br>
-                <a href="{{url}}" target="_blank">Website</a><br>
+                <img class="icons" src="../public/images/icons/time.png"><span class="duration">{{duration}}</span><br>
+                <a href="{{url}}" target="_blank"><button>Website</button></a><br>
             </p>
-            <div class="list-image">
-                <a href="/{{this.id}}"><img src="{{this.img}}"></a>
-            </div>
+            <a class="list-image" href="/{{this.id}}"><img src="{{this.img}}"></a>
         </div>
     </li>
     {{/each}}

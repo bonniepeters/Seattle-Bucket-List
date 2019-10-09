@@ -1,6 +1,9 @@
 /* MAIN STYLING */
+.desktop-title {
+    display:none;
+}
 body {
-    background-color: rgb(221, 231, 247);
+    background: white;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -16,6 +19,7 @@ a {
 .main {
     margin-top: 13.3em;
 }
+
 .title {
     background: url("../images/skyline2.jpg");
     background-size: 20em;
@@ -23,6 +27,7 @@ a {
     margin: 0;
     height: 10.97em;
     width: 100%;
+    text-transform: uppercase;
 }
 nav {
     display: flex;
@@ -31,11 +36,11 @@ nav {
     padding: 6px 12px;
     background:  rgb(64, 63, 65);
 }
-nav a, button a {
+nav a {
     color: white;
 }
 h1 {
-    color: rgb(45, 7, 92);
+    color: #2B0B59;
     font-family: 'Titan One', cursive;
     line-height: 1.1em;
     font-size: 1.9em;
@@ -45,8 +50,8 @@ h1 {
 span {
     font-size: 1em;
     font-family: 'Lobster', cursive;
+    text-transform: capitalize;
 }
-
 li {
     list-style: none;
 }
@@ -59,9 +64,6 @@ img {
     width:14.5em;
     height:14.5em;
 }
-.list {
-    display: grid;
-}
 .list-item {
     font-size: 14px;
     background: white;
@@ -72,7 +74,7 @@ img {
     grid-template-columns: 1fr 1fr;
 }
 .list-item a {
-    color: rgb(45, 7, 92);
+    color: #380E73;
 }
 p {
     font-size: 1.7em;
@@ -97,6 +99,15 @@ h3 {
 .cost {
     width:.9em;
     height:1.5em;
+}
+.duration {
+    float: right;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+}
+.list-item button {
+    margin: 0;
+    width: 100%;
 }
 
 
@@ -134,16 +145,16 @@ h2 {
 }
 input[type=submit], button {
     width: 100%;
-    background: rgb(71, 48, 100);
+    background: #A7DDF2;
     color: white;
-    font-size: 1em;
+    font-size: 1.5em;
     outline: none;
     border: none;
     border-radius: 4px;
 }
 button {
     width: 92%;
-    padding: 5px;
+    padding: 8px;
     margin: 5px 15px;
 }
 .delete {
@@ -157,7 +168,7 @@ input[type=text], input[type=number], input[type=url] {
     width: 94%;
 }
 
-/* About Activity Page */
+/* Single Activity */
 .about-activity img {
     width: 100%;
     height: auto;
@@ -171,7 +182,7 @@ input[type=text], input[type=number], input[type=url] {
 }
 .about-activity span, h4 {
     font-family: 'Ubuntu', sans-serif;
-    color: rgb(71, 48, 100);
+    color: #380E73;
     font-weight: bold;
 }
 .about-activity li {
@@ -207,25 +218,98 @@ h4{
 }
 
 @media screen and (min-width: 600px) {
+    .title {
+        display: none;
+    }
+    .desktop-title {
+        background: white;
+        height: 13em;
+        display: inline;
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        align-items: center;
+    }
+    .title-image {
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 100% 0;
+        width: 12em;
+        height: 12em;
+        margin: 0 auto;
+    }
+    h1 {
+        padding: 0;
+        font-family: 'Lobster', cursive;
+        text-transform: capitalize;
+        font-size: 3em;
+    }
+    .lb {
+        justify-self: end;
+        letter-spacing: 1.5px;
+    }
+    nav {
+        justify-content: center;
+    }
+    nav a {
+       padding: 0 1em; 
+    }
+    .list-item {
+        border-left: solid 2px black;
+        border-bottom: solid 2px black;
+    }
+    
+    /* Index */
+    .main {
+        margin-top: 15.5em;
+    }
     .list {
-        margin: 15.5em 2em 2em 2em;
+        margin: 17.5em 2em 2em 2em;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-gap: 2em;
     }
+
+    /* Single Activity */
     .about-activity {
         display: flex;
         justify-content: center;
     }
     .about-activity img {
-        width: 50%;
+        object-fit: cover;
+        width: 23em;
+        height: 23em;
     }
     .about-activity ul {
         text-align: left;
+        border-top: solid 1px lightgray;
+        padding: 0 0 0 10px;
     }
-    form {
+    h2 {
+        padding: 10px;
         margin: 0 auto;
+    }
+
+    /* Forms */
+    form {
+        margin: 0 auto 5px auto;
         width: 50%;
+    }
+    select {
+        width: 97.5%;
+    }
+    input {
+        width: 100%;
+    }
+    .delete {
+        margin: 5px auto;
+    }
+    .cancel {
+        width: 50%;
+        margin: 0 25%;
+    }
+    /* About Us */
+    .about-us {
+        margin: 0 25%;
     }
 }
